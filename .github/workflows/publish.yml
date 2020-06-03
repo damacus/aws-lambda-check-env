@@ -4,6 +4,9 @@ name: Release Gem
   push:
     branches: [master]
 
+env:
+  RUBY_VERSION: 2.7
+
 jobs:
   build_and_push:
     runs-on: ubuntu-latest
