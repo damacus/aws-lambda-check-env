@@ -1,39 +1,11 @@
 ---
 name: Release Gem
-"on": [push]
-
-env:
-  RUBY_VERSION: 2.7
-  SHELL: "/bin/bash"
+"on":
+  push:
+    branches: [master]
 
 jobs:
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-ruby@v1
-        with:
-          ruby-version: ${{ env.RUBY_VERSION }}
-      - name: Install Rubocop
-        run: bundle
-      - name: Check code
-        run: bundle exec rubocop
-
-  unit:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-ruby@v1
-        with:
-          ruby-version: ${{ env.RUBY_VERSION }}
-      - name: Install Rubocop
-        run: bundle install --with test
-      - name: RSpec
-        run: bundle exec rspec
-
   build_and_push:
-    if: github.event.pull_request.merged == true
-    needs: [unit, lint]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
