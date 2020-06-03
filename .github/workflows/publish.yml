@@ -35,6 +35,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      # - name: Version Gem
+      #   run: bundle exec bump pre --tag
       - name: Build and publish gem
         uses: damacus/publish-gem-to-github@master
         with:
