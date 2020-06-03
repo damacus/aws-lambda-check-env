@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    lambda-check-env (0.0.1)
+    lambda-check-env (0.0.1.pre.alpha)
 
 GEM
   remote: https://rubygems.org/
