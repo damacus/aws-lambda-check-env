@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    lambda-check-env (0.0.1)
+    aws-lambda-check-env (0.0.1)
 
 GEM
   remote: https://rubygems.org/
@@ -46,8 +46,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aws-lambda-check-env!
   bump (~> 0.8)
-  lambda-check-env!
   rspec (~> 3)
   rubocop (~> 0.85)
 
