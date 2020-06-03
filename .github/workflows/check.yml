@@ -14,8 +14,10 @@ jobs:
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
-      - name: Install Rubocop
-        run: bundle
+      - name: Bundler
+        run: |
+          bundle config set with 'test'
+          bundle install
       - name: Check code
         run: bundle exec rubocop
 
@@ -26,7 +28,9 @@ jobs:
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
-      - name: Install Rubocop
-        run: bundle install --with test
+      - name: Bundler
+        run: |
+          bundle config set with 'test'
+          bundle install
       - name: RSpec
         run: bundle exec rspec
