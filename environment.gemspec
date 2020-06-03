@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.license       = 'Apache-2.0'
   spec.files         = `git ls-files -z`.split("\x0")
   spec.require_paths = ['lib']
-  spec.add_development_dependency 'rspec', '~> 3'
   spec.add_development_dependency 'bump', '~> 0.8'
+  spec.add_development_dependency 'rspec', '~> 3'
   spec.add_development_dependency 'rubocop', '~> 0.85'
 end
