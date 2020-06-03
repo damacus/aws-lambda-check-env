@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # Collect required environment variables and
-#¢ check they are aavailable
+# check they are available
 class Environment
   attr_reader :environment_hash
 
@@ -24,4 +24,3 @@ class Environment
     env_var
   end
 end
-

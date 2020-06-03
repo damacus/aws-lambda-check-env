@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'environment'
+require 'environment_error'
 require 'rspec'
 
 RSpec.configure do |config|
