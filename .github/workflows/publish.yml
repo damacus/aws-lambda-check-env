@@ -1,0 +1,13 @@
+name: Release GEm
+"on": [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Build and publish gem
+        uses: damacus/publish-gem-to-github@working-dir
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          owner: damacus
