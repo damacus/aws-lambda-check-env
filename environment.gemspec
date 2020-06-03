@@ -5,9 +5,9 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'lambda-check-env'
-  spec.version       = '0.0.1-rc'
+  spec.version       = '0.0.1'
   spec.authors       = ['Dan Webb']
-  spec.homepage      = 'https://github.com/damacus/bridge'
+  spec.homepage      = 'https://github.com/damacus/lambda-check-env'
   spec.email         = ['dan@webb-agile-solutions.ltd']
   spec.summary       = 'Gem to throw custom environment errors'
   spec.description   = 'Gem to throw custom environment errors rather than swallowing them.'

@@ -30,13 +30,14 @@ jobs:
       - name: RSpec
         run: bundle exec rspec
 
-  build:
+  build_and_push:
+    if: github.event.pull_request.merged == true
     needs: [unit, lint]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      # - name: Version Gem
-      #   run: bundle exec bump pre --tag
+      - name: Version Gem
+        run: bundle exec bump patch --tag
       - name: Build and publish gem
         uses: damacus/publish-gem-to-github@master
         with:
