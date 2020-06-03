@@ -1,0 +1,5 @@
+---
+Style/RaiseArgs:
+  Enabled: false
+Layout/LineLength:
+  Max: 180
