@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'lambda-check-env'
-  spec.version       = '0.0.1.beta.1'
+  spec.version       = '0.0.1-alpha'
   spec.authors       = ['Dan Webb']
   spec.homepage      = 'https://github.com/damacus/bridge'
   spec.email         = ['dan@webb-agile-solutions.ltd']
