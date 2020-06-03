@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Build and publish gem
-        uses: damacus/publish-gem-to-github@working-dir
+        uses: damacus/publish-gem-to-github@master
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           owner: damacus
