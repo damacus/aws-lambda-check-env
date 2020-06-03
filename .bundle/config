@@ -1,0 +1,5 @@
+---
+BUNDLE_PATH: "vendor/bundle/"
+BUNDLE_DEPLOYMENT: "true"
+BUNDLE_SILENCE_ROOT_WARNING: "true"
+BUNDLE_WITHOUT: "test"
