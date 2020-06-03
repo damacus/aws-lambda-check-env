@@ -4,6 +4,7 @@ name: Release Gem
 
 env:
   RUBY_VERSION: 2.7
+  SHELL: "/bin/bash"
 
 jobs:
   lint:
