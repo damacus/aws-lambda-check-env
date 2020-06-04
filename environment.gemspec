@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = 'Gem to throw custom environment errors'
   spec.description   = 'Gem to throw custom environment errors rather than swallowing them.'
   spec.license       = 'Apache-2.0'
-  spec.files         = `git ls-files -z`.split("\x0")
+  spec.files         = `git ls-files lib LICENSE README.md`.split($RS)
   spec.require_paths = ['lib']
   spec.add_development_dependency 'bump', '~> 0.8'
   spec.add_development_dependency 'rspec', '~> 3'
