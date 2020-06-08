@@ -1,5 +1,5 @@
 ---
-name: Release Gem
+name: Check
 "on": [push]
 
 env:

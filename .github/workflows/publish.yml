@@ -1,35 +1,33 @@
 ---
-name: Check Ruby
-"on": [push]
+name: Release Gem
+"on":
+  push:
+    branches: [master]
 
 env:
   RUBY_VERSION: 2.7
 
 jobs:
-  lint:
+  build_and_push:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
-      - name: Bundler
+      - name: Version Gem
         run: |
-          bundle config set with 'test'
-          bundle install
-      - name: Check code
-        run: bundle exec rubocop
-
-  unit:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-ruby@v1
+          bundle
+          bundle exec bump patch --tag
+          bundle update
+      - name: Commit Changes
+        uses: EndBug/add-and-commit@v4
         with:
-          ruby-version: ${{ env.RUBY_VERSION }}
-      - name: Bundler
-        run: |
-          bundle config set with 'test'
-          bundle install
-      - name: RSpec
-        run: bundle exec rspec
+          message: "Update lockfile"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+      - name: Build and publish gem
+        uses: damacus/publish-gem-to-github@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          owner: damacus
