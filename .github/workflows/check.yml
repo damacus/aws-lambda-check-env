@@ -34,3 +34,6 @@ jobs:
           bundle install
       - name: RSpec
         run: bundle exec rspec
+        env:
+          SHELL: "/bin/bash"
+
