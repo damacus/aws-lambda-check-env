@@ -5,7 +5,7 @@ require 'spec_helper'
 RSpec.describe Environment do
   describe 'A valid set of environment variables' do
     before(:all) do
-      @good_env = Environment.new(%w[PWD SHELL])
+      @good_env = Environment.new(%w[PWD])
     end
 
     it 'does not throw an error with a valid set of environment variables' do
