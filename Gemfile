@@ -3,3 +3,5 @@
 source 'https://rubygems.org'
 
 gemspec
+
+wrong_ruby
