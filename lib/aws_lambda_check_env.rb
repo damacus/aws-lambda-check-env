@@ -1,4 +1,4 @@
 # frozen_string_literal: true
 
-require_relative 'aws-lambda-check-env/environment'
-require_relative 'aws-lambda-check-env/environment_error'
+require_relative 'aws_lambda_check_env/environment'
+require_relative 'aws_lambda_check_env/environment_error'
