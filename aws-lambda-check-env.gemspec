@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = 'aws-lambda-check-env'
-  spec.version       = '0.0.5'
+  spec.version       = '0.0.6'
   spec.files         = Dir['lib/**/*']
   spec.require_paths = ['lib']
   spec.authors       = ['Dan Webb']
