@@ -19,7 +19,7 @@ class Environment
   # Used to validate Environment variables
   def check_variable(env)
     env_var = ENV[env]
-    raise EnvironmentVariableNotFound.new(env) if env_var.nil?
+    raise EnvironmentVariableNotFound, env if env_var.nil?
 
     env_var
   end
