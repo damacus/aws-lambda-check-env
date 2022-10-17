@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    aws-lambda-check-env (0.0.6)
+    aws-lambda-check-env (0.0.7)
 
 GEM
   remote: https://rubygems.org/
@@ -48,6 +48,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   aws-lambda-check-env!
