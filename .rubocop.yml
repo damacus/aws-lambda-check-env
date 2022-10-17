@@ -1,9 +1,14 @@
 ---
-Style/RaiseArgs:
-  Enabled: false
+# Style/RaiseArgs:
+#   Enabled: false
 
-Layout/LineLength:
-  Max: 180
+# Layout/LineLength:
+#   Max: 180
 
-Naming/FileName:
-  Enabled: false
+# Naming/FileName:
+#   Enabled: false
+
+require: rubocop-rspec
+
+AllCops:
+  NewCops: disable

@@ -5,8 +5,7 @@
 # This is designed to help throw errors when we require variables
 # to be set
 class EnvironmentVariableNotFound < RuntimeError
-  attr_reader :variable
-  attr_reader :exception_type
+  attr_reader :variable, :exception_type
 
   def initialize(var)
     @variable = var
