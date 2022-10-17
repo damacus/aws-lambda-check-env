@@ -5,7 +5,7 @@ name: Release Gem
     branches: [master]
 
 env:
-  RUBY_VERSION: 2.7
+  RUBY_VERSION: 3.1.2
 
 jobs:
   build_and_push:
@@ -25,7 +25,7 @@ jobs:
         with:
           message: "Update lockfile"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Build and publish gem
         uses: damacus/publish-gem-to-github@master
         with:
