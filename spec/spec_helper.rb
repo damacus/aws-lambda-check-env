@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'aws-lambda-check-env'
+require 'aws_lambda_check_env'
 require 'rspec'
 
 RSpec.configure do |config|
