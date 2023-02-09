@@ -3,7 +3,7 @@ name: Check
 "on": [push]
 
 env:
-  RUBY_VERSION: 3.1.2
+  RUBY_VERSION: 3.2.1
   SHELL: "/bin/bash"
 
 jobs:
