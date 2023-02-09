@@ -5,7 +5,7 @@ name: Release Gem
     branches: [master]
 
 env:
-  RUBY_VERSION: 3.1.2
+  RUBY_VERSION: 3.2.1
 
 jobs:
   build_and_push:

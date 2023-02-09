@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = 'Gem to throw custom environment errors'
   spec.description   = 'Gem to throw custom environment errors rather than swallowing them.'
   spec.license       = 'Apache-2.0'
-  spec.required_ruby_version = '>= 3.1.0'
+  spec.required_ruby_version = '>= 3.2.0'
   spec.add_development_dependency 'bump', '~> 0.10'
   spec.add_development_dependency 'rspec', '~> 3'
   spec.add_development_dependency 'rubocop', '~> 1'
