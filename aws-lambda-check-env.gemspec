@@ -15,5 +15,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bump', '~> 0.10'
   spec.add_development_dependency 'rspec', '~> 3'
   spec.add_development_dependency 'rubocop', '~> 1'
-  spec.add_development_dependency 'rubocop-rspec', '~> 2'
+  spec.add_development_dependency 'rubocop-rspec', '~> 3'
 end
